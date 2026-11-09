@@ -1,21 +1,23 @@
-FORMKURS 2 – Update für GitHub Pages
+FORMKURS 3.0 – Installation und Update (GitHub Pages)
 
-1. Die ZIP-Datei auf dem Mac entpacken.
-2. In GitHub dein bereits vorhandenes Repository „formkurs“ öffnen.
-3. Add file -> Upload files wählen.
-4. Die entpackten Dateien direkt ins Hauptverzeichnis hochladen (nicht die ZIP-Datei).
-   Bereits vorhandene Dateien index.html, sw.js, manifest.webmanifest und Icons werden ersetzt.
-5. Unten Commit changes anklicken. Die Pages-Einstellungen bleiben bestehen.
-6. Auf dem iPhone FORMKURS in Safari aufrufen und neu laden. Falls noch die alte Version erscheint:
-   Web-App vollständig schließen und nochmals starten oder Safari-Seite neu laden.
+WICHTIG: Deine bisherigen Daten bleiben bei einem Update auf DEMSELBEN GitHub-Pages-Link im Browser gespeichert. Du musst deshalb dasselbe Repository und dieselbe URL verwenden. Ein Browserwechsel oder eine Neuinstallation kann die lokale Speicherung jedoch trennen.
 
-WICHTIG: Nutze dasselbe GitHub-Repository und dieselbe Adresse.
-Die bestehende lokale Speicherung mit dem Schlüssel formkurs_app_v1 bleibt erhalten.
-Deine bisherigen Gewichts- und Übungseinträge sollen dadurch nicht überschrieben werden.
-Trotzdem vorher in FORMKURS unter „Fortschritt“ -> „Backup exportieren“ eine Sicherung erstellen.
+1. Vor dem Update in der alten App unter Fortschritt -> Backup exportieren.
+2. Diese ZIP-Datei auf dem Mac entpacken.
+3. In GitHub dein bestehendes Repository "formkurs" öffnen.
+4. Add file -> Upload files -> ALLE entpackten Dateien aus dem Paket in den HAUPTORDNER ziehen.
+5. Die alten Dateien damit überschreiben und Commit changes bestätigen.
+6. In Safari deine GitHub-Pages-Adresse öffnen, neu laden und den neuen Stand testen. Bei Bedarf installierte App vollständig schließen und erneut öffnen.
+7. Bei Problemen Backup wiederherstellen. Bestehende Daten NICHT durch reines Testen löschen.
 
-Neu: zwei bearbeitbare Trainingspläne inkl. Bankdrücken, Trainingstagebuch mit einzelnen Sätzen,
-25 zusätzliche schnelle Rezepte, eigene Rezepte mit Fotos und JSON-Backup inkl. Rezeptfotos.
+Offline: Die PWA verwendet einen Service Worker und läuft nach dem ersten erfolgreichen Online-Laden lokal. Vor dem Flugmodus-Test die aktualisierte Version einmal bei Internetverbindung öffnen.
 
-BILDER: Bilder werden vor dem lokalen Speichern verkleinert. Zu viele Fotos können den
-lokalen Browserspeicher füllen. Nutze regelmäßig „Backup exportieren“.
+NEU: Studio-Pausentimer; Kraftdiagramme, Monatsberichte; Körpermaße & private Fotos in IndexedDB; Wochenküche und Einkaufsliste; Ernährungstagebuch mit Schätzwerten und manuellem Korrekturweg; Lauftagebuch inklusive .FIT/.TCX/.GPX Import; flexible Tage und Tagesform; Meilensteine.
+
+Datenschutz: Das Repository enthält nur Quellcode und allgemeine Vorlagen. Personenbezogene Einträge werden im Browser gespeichert (localStorage und IndexedDB). Fotos und Trainingsprotokolle werden NICHT an GitHub übertragen. Sie sind beim Geräteverlust ohne Backup verloren. Die Ansicht deiner fest eingebauten Kinderwochen ist bei Public GitHub Pages öffentlich einsehbar.
+
+Backup: Exportiere regelmäßig ein FORMKURS-v3-JSON-Backup. Darin sind auch die privaten Fotos enthalten – also nur vertraulich speichern. Importiert werden auch frühere FORMKURS-v2-Backups.
+
+Garmin: Der Import verarbeitet übliche FIT-Aktivitätsdateien sowie GPX und TCX. Je nach Garmin-Datei fehlen eventuell einige Werte. Die fehlenden Werte lassen sich im Lauftagebuch ergänzen. Es wird keine Verbindung zu Garmin hergestellt.
+
+Nutrition: Die automatische Nährwertberechnung ist eine grobe Zutatenschätzung, kein Ersatz für Produktetiketten oder individuelle Beratung. Bei unbekannten Rezeptbestandteilen muss der Wert manuell ergänzt werden.
