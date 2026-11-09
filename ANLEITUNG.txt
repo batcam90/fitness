@@ -1,0 +1,15 @@
+FORMKURS – INSTALLATION AUF DEM IPHONE
+
+VARIANTE 1: OHNE HOSTING, DIREKT OFFLINE
+Die Datei FORMKURS_offline.html separat herunterladen, in der iPhone-App „Dateien“ speichern und bei Bedarf öffnen. Alle Inhalte, Layouts und Berechnungen sind in dieser einen Datei enthalten. Bei Vorschau-Apps kann JavaScript bzw. dauerhafte Datenspeicherung eingeschränkt sein. Ein Startbildschirm-Icon ist bei lokalen HTML-Dateien nicht zuverlässig verfügbar. Ein JSON-Backup ist im Bereich „Verlauf“ vorgesehen.
+
+VARIANTE 2: WIE EINE APP AUF DEM STARTBILDSCHIRM
+1. Dieses ZIP entpacken. Den Inhalt des Ordners (insbesondere index.html, manifest.webmanifest, sw.js und die PNG-Symbole) auf einen HTTPS-Hoster für statische Webseiten hochladen, z.B. GitHub Pages oder Netlify.
+2. Die angezeigte HTTPS-Adresse in Safari auf dem iPhone öffnen (einmal online).
+3. Teilen > Zum Home-Bildschirm > Als Web-App öffnen > Hinzufügen.
+4. Danach die App einmal öffnen, während eine Internetverbindung besteht, damit die lokalen Dateien durch den Service Worker in den Offline-Cache geladen werden. Anschließend funktioniert der Inhalt ohne Netzverbindung.
+
+WICHTIG
+- Änderungen und Messwerte bleiben lokal im jeweiligen Browser bzw. in der installierten Web-App gespeichert. Die Daten werden nicht serverseitig synchronisiert. Bei iOS-Speicherbereinigung, Löschen der App oder Gerätewechsel können sie verloren gehen: regelmäßig Backup exportieren.
+- Wenn die HTML-Datei als lokales Dokument geöffnet wird, sind abhängig von der iOS-Version und Vorschau-App nicht alle interaktiven Funktionen garantiert. Die HTTPS-PWA ist deshalb die bessere Variante für tägliches Tracking.
+- Alternierende Woche A startet Montag, 09.11.2026. Woche B startet Montag, 16.11.2026. Ab dann läuft es automatisch im zweiwöchigen Wechsel.
