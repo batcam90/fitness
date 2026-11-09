@@ -1,15 +1,21 @@
-FORMKURS – INSTALLATION AUF DEM IPHONE
+FORMKURS 2 – Update für GitHub Pages
 
-VARIANTE 1: OHNE HOSTING, DIREKT OFFLINE
-Die Datei FORMKURS_offline.html separat herunterladen, in der iPhone-App „Dateien“ speichern und bei Bedarf öffnen. Alle Inhalte, Layouts und Berechnungen sind in dieser einen Datei enthalten. Bei Vorschau-Apps kann JavaScript bzw. dauerhafte Datenspeicherung eingeschränkt sein. Ein Startbildschirm-Icon ist bei lokalen HTML-Dateien nicht zuverlässig verfügbar. Ein JSON-Backup ist im Bereich „Verlauf“ vorgesehen.
+1. Die ZIP-Datei auf dem Mac entpacken.
+2. In GitHub dein bereits vorhandenes Repository „formkurs“ öffnen.
+3. Add file -> Upload files wählen.
+4. Die entpackten Dateien direkt ins Hauptverzeichnis hochladen (nicht die ZIP-Datei).
+   Bereits vorhandene Dateien index.html, sw.js, manifest.webmanifest und Icons werden ersetzt.
+5. Unten Commit changes anklicken. Die Pages-Einstellungen bleiben bestehen.
+6. Auf dem iPhone FORMKURS in Safari aufrufen und neu laden. Falls noch die alte Version erscheint:
+   Web-App vollständig schließen und nochmals starten oder Safari-Seite neu laden.
 
-VARIANTE 2: WIE EINE APP AUF DEM STARTBILDSCHIRM
-1. Dieses ZIP entpacken. Den Inhalt des Ordners (insbesondere index.html, manifest.webmanifest, sw.js und die PNG-Symbole) auf einen HTTPS-Hoster für statische Webseiten hochladen, z.B. GitHub Pages oder Netlify.
-2. Die angezeigte HTTPS-Adresse in Safari auf dem iPhone öffnen (einmal online).
-3. Teilen > Zum Home-Bildschirm > Als Web-App öffnen > Hinzufügen.
-4. Danach die App einmal öffnen, während eine Internetverbindung besteht, damit die lokalen Dateien durch den Service Worker in den Offline-Cache geladen werden. Anschließend funktioniert der Inhalt ohne Netzverbindung.
+WICHTIG: Nutze dasselbe GitHub-Repository und dieselbe Adresse.
+Die bestehende lokale Speicherung mit dem Schlüssel formkurs_app_v1 bleibt erhalten.
+Deine bisherigen Gewichts- und Übungseinträge sollen dadurch nicht überschrieben werden.
+Trotzdem vorher in FORMKURS unter „Fortschritt“ -> „Backup exportieren“ eine Sicherung erstellen.
 
-WICHTIG
-- Änderungen und Messwerte bleiben lokal im jeweiligen Browser bzw. in der installierten Web-App gespeichert. Die Daten werden nicht serverseitig synchronisiert. Bei iOS-Speicherbereinigung, Löschen der App oder Gerätewechsel können sie verloren gehen: regelmäßig Backup exportieren.
-- Wenn die HTML-Datei als lokales Dokument geöffnet wird, sind abhängig von der iOS-Version und Vorschau-App nicht alle interaktiven Funktionen garantiert. Die HTTPS-PWA ist deshalb die bessere Variante für tägliches Tracking.
-- Alternierende Woche A startet Montag, 09.11.2026. Woche B startet Montag, 16.11.2026. Ab dann läuft es automatisch im zweiwöchigen Wechsel.
+Neu: zwei bearbeitbare Trainingspläne inkl. Bankdrücken, Trainingstagebuch mit einzelnen Sätzen,
+25 zusätzliche schnelle Rezepte, eigene Rezepte mit Fotos und JSON-Backup inkl. Rezeptfotos.
+
+BILDER: Bilder werden vor dem lokalen Speichern verkleinert. Zu viele Fotos können den
+lokalen Browserspeicher füllen. Nutze regelmäßig „Backup exportieren“.
